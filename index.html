@@ -10,7 +10,7 @@
 
 		<div id="app">
 		    <div class="stats">
-		      <h3 class="stats__title">{{"Задачь на данный момент: "+ tasks.length}}</h3>
+		      <h3 class="stats__title">{{"Задач на данный момент: "+ tasks.length}}</h3>
 		    </div>
 		    <task @task_done="remove_task(index)" :key="index" v-for="(data,index) in tasks" :data="data" ></task>
 		    <div class="add_task">
